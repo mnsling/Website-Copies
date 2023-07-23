@@ -1,95 +1,250 @@
-.header {
-    display: inline-block;
-    width: 200%;
-    
-}
-
-.icon {
-    width: 40px;
-    margin-left:100px;
-    vertical-align: top;
-    display: inline-block;
-}
-
-.name {
-    width: 95px;
-    vertical-align: top;
-    display: inline-block;
-}
-
-.navigation {
-  background-color: #ffffff;
-  width: 80px;
-  height: 100%; /* Adjust this value according to your needs */
-  position: fixed;
-  left: 0;
-  top: 0px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 60px;
-  width: 80px;
-}
-
-li {
-  padding: 20px;
-  font-size: 9px;
-  margin-left: 1px;
-  text-align: center;
-}
-
-li:hover {
-    background-color: #f0f0f0e8;
-    border-radius: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-  text-align: center;
-  margin-top: 30px;
-}
-
-a:hover {
-  color: #000;
-}
-
-.home {
-    width: 25px;
-    margin-bottom: 5px;
-    margin-left: 7px;
-    display: block;
-}
-
-body {
-    background-color: #ffffff;
-}
-
 body {
     font-family: Roboto, Arial;
+    height: 1800px;
+    padding-top: 60px;
+}
+
+.header {
+    height: 55px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.left-section {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.triple-bar {
+    border: none;
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.triple-bar:hover {
+    background-color: rgb(236, 234, 234);
+    border-radius: 25px;
+}
+
+.logo {
+    height: 46px;
+    cursor: pointer;
+}
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 600px;
+    align-items: center;
 }
 
 .searchbar {
-    font-size: 20px;
-    padding-left: 12px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 34px;
+    flex: 1;
+    font-size: 16px;
+    padding-left: 10px;
     border: solid;
-    border-width: 0.10px;
+    border-width: 1px;
+    border-color: rgb(212, 212, 212);
+}
+
+.searchbar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search {
+    width: 60px;
+    height: 38px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+.search:hover {
+    background-color: rgb(236, 234, 234);
+}
+
+.mic {
+    width: 40px;
+    height: 38px;
+    border: none;
     border-radius: 20px;
-    width: 15%;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.mic:hover {
+    background-color: rgb(236, 234, 234);
+}
+
+.right-section {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.create {
+    border: none;
+    background-color: white;
+    margin-right: 6px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+}
+
+.create:hover {
+    border-radius: 22px;
+    background-color: rgb(236, 234, 234);
+}
+
+.notifications {
+    border: none;
+    background-color: white;
+    margin-right: 6px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+}
+
+.notifications:hover {
+    border-radius: 22px;
+    background-color: rgb(236, 234, 234);
+}
+
+.profile {
+    border: none;
+    background-color: white;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+}
+
+.semi-header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+
+.sidebar {
+    width: 180px;
     display: inline-block;
-    margin-top: 6.5px;
-    margin-bottom: 30px;
-    margin-left: 480px;
-    vertical-align: top;
-    color: #aaa9a9;
+    justify-content: center;
+    margin-right: 100px;
+    padding-left: 10px;
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+}
+
+.text {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 8px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.text:hover {
+    border: none;
+    background-color: rgb(236, 234, 234);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.home {
+    width: 18px;
+    padding-bottom: 8px;
+}
+
+.shorts {
+    width: 18px;
+    padding-bottom: 8px;
+}
+
+.sub {
+    width: 18px;
+    padding-bottom: 8px;
+}
+
+.library {
+    width: 18px;
+    padding-bottom: 8px;
+}
+
+.varieties {
+    height: 34px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(212, 212, 212);
+    border: none;
+    position: fixed;
+    top: 60px;
+    left: 190px;
+    background-color: white;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    border-color: gray;
+    cursor: pointer;
+    padding: 7px;
+    margin-right: 20px;
+}
+
+.button:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+.youtube-vids {
+    display: inline-block;
+    margin-left: 182px;
+    margin-top: 50px;
+}
+
+.video-preview {
+    display: inline-block;
+    width: 290px;
+    margin-right: 8px;
+    margin-bottom: 20px;
 }
 
 .thumbnail {
-    width: 300px;
+    width: 290px;
     border-radius: 12px;
     transition: border-radius 0.8s;
 }
@@ -98,11 +253,33 @@ body {
     border-radius: 0;
 }
 
+.below-thumbnail {
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.display-photos {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+}
+
+.prof-pic {
+    display: inline-block;
+    width: 38px;
+    border-radius: 25px;
+}
+
+.video-info {
+    position: static;
+}
+
 .video-title {
     font-weight: bold;
-    font-size: 15px;
-    width: 245px;
-    line-height: 22px;
+    font-size: 14px;
+    width: 238px;
+    line-height: 20px;
     margin-top: 0;
     margin-bottom: 0;
     display: inline-block;
@@ -110,7 +287,7 @@ body {
 }
 
 .video-author {
-    font-size: 13px;
+    font-size: 12px;
     color: gray;
     margin-top: 5px;
     margin-bottom: 0;
@@ -119,43 +296,10 @@ body {
 }
 
 .video-stats {
-    font-size: 13px;
+    font-size: 12px;
     color: gray;
     margin-top: 0.3px;
     margin-bottom: 0;
     width: 245px;
     display: inline-block;
-}
-
-.video-preview {
-    width: 300px;
-    display: inline-block;
-    margin-right: 13px;
-}
-
-.display-photos {
-    display: inline-block;
-    vertical-align: top;
-    width: 50px;
-}
-
-.prof-pic {
-    display: inline-block;
-    width: 43px;
-    margin-right: 12px;
-    border-radius: 25px;
-}
-
-.video-info {
-    display: inline-block;
-    width: 245px;
-}
-
-.below-thumbnail {
-    margin-top: 6px;
-    margin-bottom: 40px;
-}
-
-.YouTube-Vids {
-    margin-left: 250px;
 }
