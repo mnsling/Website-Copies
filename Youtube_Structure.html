@@ -1,212 +1,300 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-    <!--links the style and functionality of the website-->
-    <link href="Youtube.css" rel="stylesheet"/>
-    <script src="Youtube.js"></script>
+        <link href="Youtube.css" rel="stylesheet"/>
+        <script src="Youtube.js"></script>
 
         <title>YouTube</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
     </head>
 
     <body>
 
-        <div class="navigation">
-        <ul>
-            <li><a href="#"><img class="home" src="hut.png">Home</a></li>
-            <li><a href="#"><img class="home" src="clip.png">Shorts</a></li>
-            <li><a href="#"><img class="home" src="subscribe.png">Subscribe</a></li>
-            <li><a href="#"><img class="home" src="library.png">Library</a></li>
-        </ul>
-        </div>
-
+        <!--header-->
         <div class="header">
-        <!--youtube logo-->
-        <img class="icon" src="youtube.png">
-        <img class="name" src="name.png">
-        <!--Searchbar-->
-        <input class="searchbar" type="text" placeholder="Search">
+            <div class="left-section">
+                <button class="triple-bar"><img style="
+                    height: 16px;" src="Icons\control.png"></button>
+                <img class="logo" src="Icons\Logo.png">
+            </div>
+
+            <div class="middle-section">
+                <input class="searchbar" type="text" placeholder="Search">
+                <button class="search"><img style="
+                height: 15px;" src="Icons\search-interface-symbol.png"></button>
+
+                <button class="mic"><img style="
+                height: 15px;" src="Icons\microphone-black-shape.png"></button>
+            </div>
+
+            <div class="right-section">
+                <button class="create"><img style="
+                height: 18px;" src="Icons\tab.png"></button>
+                <button class="notifications"><img style="
+                height: 19px;" src="Icons\bell.png"></button>
+                <button class="profile"><img style="
+                height: 32px; border-radius: 20px;" src="DP\nick.jpg"></button>
+            </div>
         </div>
 
-        <!--a div for all videos-->
-        <div class="YouTube-Vids">
-        
-            <!--YouTube video 1-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=ERuuhZTV9YI" target="_blank">      <!--thumbnail-->
-                    <img class="thumbnail" src="thumbnail2.webp">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp.jpg">     <!--Youtube Account-->
-                </div>
-                <div class="video-info">
-                <p class="video-title">Brock Lesnar tortures Cody Rhodes with the Kimura Lock...</p>    <!--Video Title-->
-                <p class="video-author">WWE &check;</p>         <!--Video Author-->
-                <p class="video-stats">154k views &#183; 4hrs ago</p>       <!--Video Stats-->
-                </div>
-            </div>
+        <div class="semi-header">
+            <!--sidebar-->
+            <div class="sidebar">
+                <button class="text"><img class="home" src="Icons\hut.png">Home</button>
+                <button class="text"><img class="shorts" src="Icons\clip.png">shorts</button>
+                <button class="text"><img class="sub" src="Icons\subscribe.png">subscribe</button>
+                <button class="text"><img class="library" src="Icons\library.png">library</button>
             </div>
 
-            <!--YouTube video 2-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=Rp6pZDSfQ34" target="_blank">
-                    <img class="thumbnail" src="thumbnail.webp">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">The Judgment Day's path of destruction: Raw highlights...</p>
-                <p class="video-author">WWE &check;</p>
-                <p class="video-stats">41k views &#183; 4hrs ago</p>
-                </div>
-            </div>
-            </div>
-
-            <!--YouTube video 3-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=kCXXiiqMS6k&t=30s" target="_blank">
-                    <img class="thumbnail" src="thumbnail3.webp">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">Gunther calls out Drew McIntyre: Raw highlights, July 17, 2023</p>
-                <p class="video-author">WWE &check;</p>
-                <p class="video-stats">80k views &#183; 4hrs ago</p>
-                </div>
-            </div>
-            </div>
-
-            <!--YouTube video 4-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=EMcIlJ__p7k" target="_blank">
-                    <img class="thumbnail" src="thumbnail4.webp">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">Ronda Rousey initiates a brawl with Shayna Baszler: Raw highlights...</p>
-                <p class="video-author">WWE &check;</p>
-                <p class="video-stats">89k views &#183; 4hrs ago</p>
-                </div>
-            </div>
-            </div>
-
-            <!--YouTube video 5-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=QPrgJ3A3J3M" target="_blank">
-                    <img class="thumbnail" src="thumbnail5.webp">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">Seth “Freakin” Rollins’ first World Heavyweight Title defense: Raw...
-                </p>
-                <p class="video-author">WWE &check;</p>
-                <p class="video-stats">992k views &#183; 1 month  ago</p>
-                </div>
-            </div>
-            </div>
-
-            <!--YouTube video 6-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=66VsKox3itk&list=RD66VsKox3itk&start_radio=1" target="_blank">
-                    <img class="thumbnail" src="thumbnail6.jpg">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="unnamed.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">[방탄소년단(BTS)] So What 교차편집 Stage Mix</p>
-                <p class="video-author">friz프리즈</p>
-                <p class="video-stats">10m views &#183; 3 years ago</p>
-                </div>
-            </div>
-            </div>
-
-            <!--YouTube video 7-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=XkOZoSanaKE&list=RDXkOZoSanaKE&start_radio=1" target="_blank">
-                    <img class="thumbnail" src="thumbnail8.jpg">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp3.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">[방탄소년단/BTS] Lost 무대 교차편집 NEW (stage mix)(bts lost...</p>
-                <p class="video-author">Brilliant</p>
-                <p class="video-stats">12m views &#183; 5 years ago</p>
-                </div>
-            </div>
-            </div>
-
-            <!--YouTube video 8-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=MQSVxImvtrQ" target="_blank">
-                    <img class="thumbnail" src="thumbnail7.webp">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp4.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">[MPD직캠] (여자)아이들 우기 직캠 4K '퀸카 (Queencard)' ((G)I-DLE...</p>
-                <p class="video-author">M2 &check;</p>
-                <p class="video-stats">155k views &#183; 2 months ago</p>
-                </div>
-            </div>
-            </div>
-
-            <!--YouTube video 9-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=QU9c0053UAU" target="_blank">
-                    <img class="thumbnail" src="thumbnail9.webp">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp5.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">정국 (Jung Kook) 'Seven (feat. Latto)' Official MV</p>
-                <p class="video-author">HYBE LABELS &check;</p>
-                <p class="video-stats">75m views &#183; 5 days ago</p>
-                </div>
-            </div>
-            </div>
-
-            <!--YouTube video 10-->
-            <div class="video-preview">
-                <a href="https://www.youtube.com/watch?v=V9wQyulzvW8" target="_blank">
-                    <img class="thumbnail" src="thumbnail10.webp">
-                </a> 
-                <div class="below-thumbnail">
-                <div class="display-photos">
-                    <img class="prof-pic" src="dp6.jpg">
-                </div>
-                <div class="video-info">
-                <p class="video-title">The Best of Taylor Swift on The Tonight Show</p>
-                <p class="video-author">The Tonight Show Starring Jimmy Fallon</p>
-                <p class="video-stats">2.7m views &#183; 1 year ago</p>
-                </div>
-            </div>
+            <!--varieties-->
+            <div class="varieties">
+                <button class="button" style="
+                    background-color: black;
+                    color: white;">All</button>
+                <button class="button">Mixes</button>
+                <button class="button">Gaming</button>
+                <button class="button">Sports Entertainment</button>
+                <button class="button">Music</button>
+                <button class="button">Html</button>
+                <button class="button">WWE</button>
+                <button class="button">Live</button>
+                <button class="button">Culinary Arts</button>
+                <button class="button">Kpop</button>
+                <button class="button">Graphic Design</button>
+                <button class="button">Valorant</button>
+                <button class="button">Editing</button>
+                <button class="button">Computers</button>
+                <button class="button">Desk Setups</button>
+                <button class="button">Dance-Pop</button>
+                <button class="button">Adventure Games</button>
             </div>
         </div>
+
+        <!--a div for all youtube videos-->
+        <div class="youtube-vids">
+
+            <!--youtube video 1-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=ERuuhZTV9YI">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail1.webp">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp1.jpg">  
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">Brock Lesnar tortures Cody Rhodes with the Kimura Lock...</p>   
+                    <!--Video Author--> 
+                    <p class="video-author">WWE &check;</p>  
+                    <!--Video Stats-->       
+                    <p class="video-stats">154k views &#183; 4hrs ago</p>       
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 2-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=Rp6pZDSfQ34">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail2.webp">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp1.jpg">     
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">The Judgment Day's path of destruction: Raw highlights...</p>  
+                    <!--Video Author--> 
+                    <p class="video-author">WWE &check;</p>         
+                    <!--Video Stats-->
+                    <p class="video-stats">41k views &#183; 4hrs ago</p>      
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 3-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=kCXXiiqMS6k&t=30s">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail3.webp">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp1.jpg">    
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">Gunther calls out Drew McIntyre: Raw highlights, July 17, 2023</p>   
+                    <!--Video Author--> 
+                    <p class="video-author">WWE &check;</p>    
+                    <!--Video Stats-->     
+                    <p class="video-stats">80k views &#183; 4hrs ago</p>      
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 4-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=EMcIlJ__p7k">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail4.webp">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp1.jpg">  
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">Ronda Rousey initiates a brawl with Shayna Baszler: Raw highlights...</p>
+                    <!--Video Author-->    
+                    <p class="video-author">WWE &check;</p>      
+                    <!--Video Stats-->   
+                    <p class="video-stats">89k views &#183; 5hrs ago</p>       
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 5-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=QPrgJ3A3J3M">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail5.webp">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp1.jpg">    
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">Seth “Freakin” Rollins’ first World Heavyweight Title defense: Raw...</p>  
+                    <!--Video Author-->  
+                    <p class="video-author">WWE &check;</p>     
+                    <!--Video Stats-->    
+                    <p class="video-stats">992k views &#183; 1 month ago</p>       
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 6-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=66VsKox3itk&list=RD66VsKox3itk&start_radio=1">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail6.jpg">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp2.jpg">     
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">[방탄소년단(BTS)] So What 교차편집 Stage Mix</p> 
+                    <!--Video Author-->
+                    <p class="video-author">friz프리즈</p>       
+                    <!--Video Stats-->  
+                    <p class="video-stats">10m views &#183; 3 years ago</p>      
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 7-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=MQSVxImvtrQ">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail7.webp">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp4.jpg">     
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">[MPD직캠] (여자)아이들 우기 직캠 4K '퀸카 (Queencard)' ((G)I-DLE...</p> 
+                    <!--Video Author-->
+                    <p class="video-author">M2 &check;</p>       
+                    <!--Video Stats-->  
+                    <p class="video-stats">155k views &#183; 2 months ago</p>      
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 8-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=66VsKox3itk&list=RD66VsKox3itk&start_radio=1">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail8.jpg">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp3.jpg">     
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">[방탄소년단/BTS] Lost 무대 교차편집 NEW (stage mix)(bts lost...</p> 
+                    <!--Video Author-->
+                    <p class="video-author">Brilliant</p>       
+                    <!--Video Stats-->  
+                    <p class="video-stats">12m views &#183; 5 years ago</p>      
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 9-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=QU9c0053UAU">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail9.webp">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp5.jpg">     
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">정국 (Jung Kook) 'Seven (feat. Latto)' Official MV</p> 
+                    <!--Video Author-->
+                    <p class="video-author">HYBE LABELS &check;</p>       
+                    <!--Video Stats-->  
+                    <p class="video-stats">75m views &#183; 5 days ago</p>      
+                    </div>
+                </div>
+            </div>
+
+            <!--youtube video 10-->
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=V9wQyulzvW8">
+                    <!--thumbnail-->
+                    <img class="thumbnail" src="Thumbnails\thumbnail10.webp">
+                </a>
+                <div class="below-thumbnail">
+                    <!--Youtube Account-->
+                    <div class="display-photos">
+                        <img class="prof-pic" src="DP\dp6.jpg">     
+                    </div>
+                    <div class="video-info">
+                    <!--Video Title-->
+                    <p class="video-title">The Best of Taylor Swift on The Tonight Show</p> 
+                    <!--Video Author-->
+                    <p class="video-author">The Tonight Show Starring Jimmy Fallon</p>       
+                    <!--Video Stats-->  
+                    <p class="video-stats">2.7m views &#183; 1 year ago</p>      
+                    </div>
+                </div> 
+            </div>
+        </div>    
     </body>
 </html>
-
