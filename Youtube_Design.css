@@ -234,13 +234,16 @@ body {
     display: inline-block;
     margin-left: 182px;
     margin-top: 50px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(213, 213, 213);
 }
 
 .video-preview {
     display: inline-block;
     width: 290px;
     margin-right: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .thumbnail {
@@ -302,4 +305,49 @@ body {
     margin-bottom: 0;
     width: 245px;
     display: inline-block;
+}
+
+.youtube-shorts {
+    display: inline-block;
+    margin-left: 180px;
+    position: static;
+}
+
+.shorts-preview {
+    display: inline-block;
+    width: 180px;
+    margin-right: 8.2px;
+}
+
+.shorts-thumbnail {
+    display: inline-block;
+    position: static;
+    margin-top: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 12px;
+}
+
+.shorts-info {
+    display: inline-block;
+    width: 190px;
+}
+
+.shorts-title {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 6px;
+    width: 190px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.shorts-stats {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 190px;
+    color: gray;
 }
