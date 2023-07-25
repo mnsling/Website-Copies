@@ -1,6 +1,6 @@
 body {
     font-family: Roboto, Arial;
-    height: 1800px;
+    height: 1300px;
     padding-top: 60px;
 }
 
@@ -231,7 +231,8 @@ body {
 }
 
 .youtube-vids {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-left: 182px;
     margin-top: 50px;
     border-bottom-style: solid;
@@ -241,13 +242,12 @@ body {
 
 .video-preview {
     display: inline-block;
-    width: 290px;
-    margin-right: 8px;
     margin-bottom: 30px;
+
 }
 
 .thumbnail {
-    width: 290px;
+    width: 90%;
     border-radius: 12px;
     transition: border-radius 0.8s;
 }
@@ -265,7 +265,7 @@ body {
 .display-photos {
     display: inline-block;
     vertical-align: top;
-    width: 40px;
+    width: 10%;
 }
 
 .prof-pic {
@@ -276,15 +276,17 @@ body {
 
 .video-info {
     position: static;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .video-title {
     font-weight: bold;
     font-size: 14px;
-    width: 238px;
     line-height: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    padding-right: 30px;
     display: inline-block;
     vertical-align: top;
 }
@@ -294,7 +296,6 @@ body {
     color: gray;
     margin-top: 5px;
     margin-bottom: 0;
-    width: 245px;
     display: inline-block;
 }
 
@@ -303,14 +304,17 @@ body {
     color: gray;
     margin-top: 0.3px;
     margin-bottom: 0;
-    width: 245px;
     display: inline-block;
 }
 
 .youtube-shorts {
     display: inline-block;
     margin-left: 180px;
+    padding-bottom: 40px;
     position: static;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(213, 213, 213);
 }
 
 .shorts-preview {
